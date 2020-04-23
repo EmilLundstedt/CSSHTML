@@ -1,2 +1,2 @@
 # CSSHTML
-Repository for CSS HTML 
+Repository for CSS HTML class

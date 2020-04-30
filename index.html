@@ -8,6 +8,7 @@
 	<meta name="description" content="Ucello Airline">
 	<link rel="stylesheet" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js"> </script>
 
 	<title> Ucello Airline</title>
 
@@ -26,7 +27,13 @@
 				
 			</ul>
 		</nav>
-		
+
+	<div class="hamburger">
+		<div class="burger_row"></div>
+		<div class="burger_row"></div>
+		<div class="burger_row"></div>
+	</div>
+
 	
 </header>
 	<section class="main">
@@ -40,10 +47,12 @@
     		<div class="content">
     				<h4> Nepal </h4>
 
-					<h1>Explore the beautiful nature and the exciting culture  </h1>
+					<h1>Beautiful nature and exciting culture</h1>
 
-					<p>with the most exclusive Airline in the world. </p>
+					
 
+
+					<p > Explore and enjoy! </p>
 		
 			<section class="buttoncontainer">
 			<button class="button"> Join us </button>
@@ -71,5 +80,17 @@
 			<p> Uccello, Copyright &copy; 2020 </p>	
 
 </footer>
+
+
+
+<script> 
+
+$(document).ready(function(){
+	$('.hamburger').click(function() {
+		$(".navbar").fadeToggle(500);
+	});
+});
+</script>
+
 </body>
 </html>

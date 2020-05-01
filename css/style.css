@@ -58,7 +58,8 @@ header {
 	display: flex;
 	justify-content: center;
 	align-self: center;
-	height: 80%;
+	height: 75%;
+
 	
 	background-color: rgba(255,255,255,0.3);
 	border-radius: 5px;
@@ -189,7 +190,7 @@ select{
 /**** header ***/
 
 header .hamburger {
-	display: block;
+	display: none;
 	
 margin: 20px;
 	align-self: center;
@@ -210,7 +211,7 @@ header .burger_row{
 }
 
 .hamburger:hover{
-	transition: 2s;
+	transition: all 2s ;
 
 	transform: rotate(90deg);
 }
@@ -218,7 +219,7 @@ header .burger_row{
 
 header .navbar {
 	
-		flex:1;
+	flex:1;
 }
 
 header .sidebar{
@@ -233,12 +234,13 @@ header .sidebar h4{
 	justify-content: center;
 	color: white;
 	font-size: 6vh;
-	
 
-	
 
 }
 
+
+
+ 
 .nav-links {
 	justify-content: space-around;
 	list-style: none;
@@ -262,7 +264,7 @@ header .sidebar h4{
 
 
 .nav-link:hover, .current-nav-link:hover{
-	transform:scale(1.05);
+	
 	color: black;
 	
 
@@ -271,7 +273,8 @@ header .sidebar h4{
 
 
 .main {
-	
+	background: blue;
+
 	height:85%;
 	
 	
@@ -304,20 +307,23 @@ header .sidebar h4{
 
 
 
-.sidebar {
-	padding-left: 10px;
+.sidebar{
+	
 	display: flex;
 	align-self: center;
 	justify-content: center;
 
-	width: 12.5%;
+	width: 25%;
 	height: 100%;
-	background-color: transparent;
+	
 	
 
 }
 
-
+.main .sidebar {
+	background: red;
+	display: none;
+}
 
 .content {
 	
@@ -348,7 +354,7 @@ footer {
 	
 	height: 5%;
 
-	background: #f2f4f7;
+	background: white;
 
 	font-size: 25px;
 	color: black;
@@ -357,18 +363,45 @@ footer {
 }
 
 
+.popup
+{
+transition: all 1s;
+height: 40%;
+width: 100%;
+
+
+}
+
+.popup .navbar {
+	background-color:rgba(00,00,00,0.4);
+ 	
+ 	height: 50%;
+  	}
+
+.popup .navbar .nav-links{
+	display: block;
+	
+}
+
+.popup .navbar .nav-link, .popup .navbar .current-nav-link{
+	font-size:20px;
+}
+
+
 
 
 /*** media queries **/
 
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1170px) {
 
 
-.navbar{
+header .navbar{
 	display: none;
 }
-
+header .hamburger {
+	display: inline;
+}
   .main .content h1{
   	display: none;
   }
@@ -377,18 +410,12 @@ footer {
   }
 
   header .sidebar{
-  	background: red;
+  	
 	flex:2;
 	justify-content: space-between;
   }
 
-header .navbar .nav-links{
- 	background-color:rgba(00,00,00,0.4);
- 	border-radius: 5px; 
-  	display: block;
-  	
 
-  }
 
  
   header .nav-link, header .current-nav-link {
@@ -398,4 +425,42 @@ header .navbar .nav-links{
   }
 }
 
+@media screen and (max-width: 570px) {
 
+.main .sidebar {
+	background-color: red;
+	width: 60%;
+}
+header .sidebar h4 {
+	font-size: 4vh;
+}
+
+.popup .navbar .nav-link, .popup .navbar .current-nav-link{
+
+	font-size:20px;
+}
+
+.content p{
+	font-size: 20px;
+}
+
+.content h4 {
+	font-size: 50px;
+}
+
+}
+
+
+@media screen and (max-width: 350px) {
+
+.content p{
+	font-size: 15px;
+}
+
+.content h4 {
+	font-size: 35px;
+}
+
+
+
+}

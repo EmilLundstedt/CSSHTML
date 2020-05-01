@@ -6,6 +6,7 @@
 	<meta charset="UTF-8">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/style.css">
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js"> </script>
 </head>
 <body>
 		<header>
@@ -22,28 +23,33 @@
 			</ul>
 		</nav>
 		
+		<div class="hamburger">
+		<div class="burger_row"></div>
+		<div class="burger_row"></div>
+		<div class="burger_row"></div>
+	</div>
 	
 </header>
 	<section class="main">
  		<div class="wrap">
     		
 
-<section class="contact_form">
+		<section class="contact_form">
 		
-		<form>	
-			<div class="name_section">
-				<label>Your Name: </label>
- 	 			<input type="text"  autocomplete="off" id="fname" name="fname" placeholder="First Name">
- 				<input type="text" autocomplete="off" id="lname" name="lname" placeholder="Last Name">
- 				<input type="text" autocomplete="off" id="lname" name="lname" placeholder="Order Number">
-			</div>
+				<form>	
+					<div class="name_section">
+					<label>Your Name: </label>
+ 	 				<input type="text"  autocomplete="off" id="fname" name="fname" placeholder="First Name">
+ 					<input type="text" autocomplete="off" id="lname" name="lname" placeholder="Last Name">
+ 					<input type="text" autocomplete="off" id="lname" name="lname" placeholder="Order Number">
+				</div>
 
-			<div class="email_section">
+				<div class="email_section">
 				<label>Your Email: </label>
  				<input type="text"autocomplete="off" id="fname" name="fname"  placeholder="e.g.hello@gmail.com">
-			</div>
+				</div>
 
-			<div class="message_section">
+				<div class="message_section">
 
 				
 				<label>Your Message: </label>
@@ -53,24 +59,59 @@
     			<option value="Complaints">Complaints</option>
 
     			<textarea type="text" placeholder="Write your concerns..." autocomplete="off" id="messagebox" name="messagebox">  </textarea>
-			</div>
-			<div class="submit-section">
-  			<input type="submit" value="Submit">
-  			</div>
+				</div>
+				<div class="submit-section">
+  				<input type="submit" value="Submit">
+  				</div>
 		
-		</form>	
+			</form>	
 
-	
+	</section>
     		
+<div class="sidebar">
+    				<div class="popup">
+
+    					<nav class="navbar">
+			<ul class="nav-links">
+				<li><a class="current-nav-link" href="index.html">Home</a></li>
+				<li><a class="nav-link" href="#">Gallery</a></li>
+				<li><a class="nav-link" href="contactus.html">Contact</a></li>
+				
+			</ul>
+		</nav>
+
+    				</div>
     		</div>
-  		</div>
-	</section>	
+
+    		</div>
+
+	</section>
+	
+<
+</section>
+
+
 		<svg class ="graph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-  				<path fill=#f2f4f7 fill-opacity="1" d="M0,96L30,90.7C60,85,120,75,180,74.7C240,75,300,85,360,80C420,75,480,53,540,58.7C600,64,660,96,720,122.7C780,149,840,171,900,160C960,149,1020,107,1080,101.3C1140,96,1200,128,1260,144C1320,160,1380,160,1410,160L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>	
+  				<path fill=white fill-opacity="1" d="M0,96L30,90.7C60,85,120,75,180,74.7C240,75,300,85,360,80C420,75,480,53,540,58.7C600,64,660,96,720,122.7C780,149,840,171,900,160C960,149,1020,107,1080,101.3C1140,96,1200,128,1260,144C1320,160,1380,160,1410,160L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>	
 
 <footer>
 	<p> Uccello, Copyright &copy; 2020 </p>	
 
 </footer>
+
+
+<script> 
+
+$(document).ready(function(){
+
+
+
+	$('.hamburger').click(function() {
+		$(".main .sidebar ").fadeToggle(1000);
+	});
+
+	
+});
+</script>
 </body>
 </html>

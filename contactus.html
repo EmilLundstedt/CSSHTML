@@ -73,9 +73,9 @@
 
     					<nav class="navbar">
 			<ul class="nav-links">
-				<li><a class="current-nav-link" href="index.html">Home</a></li>
+				<li><a class="nav-link" href="index.html">Home</a></li>
 				<li><a class="nav-link" href="#">Gallery</a></li>
-				<li><a class="nav-link" href="contactus.html">Contact</a></li>
+				<li><a class="current-nav-link" href="contactus.html">Contact</a></li>
 				
 			</ul>
 		</nav>
@@ -103,7 +103,10 @@
 <script> 
 
 $(document).ready(function(){
+$(window).resize(function(){
 
+$(".main .sidebar ").hide();
+})
 
 
 	$('.hamburger').click(function() {

@@ -11,7 +11,7 @@ html {
 
 body {
 	height: 100%;
-	background: url('../img/showcase4.jpg') no-repeat;
+	background: url('../img/showcase2.jpg') no-repeat;
 	background-size: cover;
 	background-position: center;
 }
@@ -21,10 +21,10 @@ header {
 	
 	height: 15%;
 	
-	background:#b49696 ;
+	background:#7D3C98;
 	
 	align-content: space-between;
-	border-bottom: 5px solid #4D1F2D;
+	border-bottom: 5px solid #F4D03F;
 
 
 }
@@ -139,6 +139,7 @@ select{
   resize: none;
   height: 100px;
   color: black;
+
 }
 
 
@@ -164,7 +165,7 @@ select{
 
 	border-radius: 5px;
 	border:none;
-	padding: 10px 20px;
+	padding: 10px ;
 	font-size: 20px;
 	cursor: pointer;
 	margin: 20px;
@@ -273,9 +274,9 @@ header .sidebar h4{
 
 
 .main {
-	background: blue;
+	
 
-	height:85%;
+	height:80%;
 	
 	
 }
@@ -320,10 +321,6 @@ header .sidebar h4{
 
 }
 
-.main .sidebar {
-	background: red;
-	display: none;
-}
 
 .content {
 	
@@ -331,7 +328,7 @@ header .sidebar h4{
 	color: white;
 	margin-top: 10vw;
 	text-shadow: 5px 5px 5px rgba(00,00,00,0.4);
-	background-color: transparent;
+	
 
 	width: 75%;
 	
@@ -354,7 +351,7 @@ footer {
 	
 	height: 5%;
 
-	background: white;
+	background-color: white;
 
 	font-size: 25px;
 	color: black;
@@ -362,29 +359,39 @@ footer {
 	font-weight: bold;
 }
 
+.main .sidebar {
+
+	display: none;
+	height: 100%;
+
+}
 
 .popup
 {
 transition: all 1s;
 height: 40%;
-width: 100%;
 
 
 }
 
-.popup .navbar {
+.popup .navbar .nav-links{
 	background-color:rgba(00,00,00,0.4);
+ 	height: 100%;
  	
- 	height: 50%;
   	}
+
+
 
 .popup .navbar .nav-links{
 	display: block;
+	height: 100%;
 	
 }
 
+
 .popup .navbar .nav-link, .popup .navbar .current-nav-link{
-	font-size:20px;
+	font-size:3vh;
+
 }
 
 
@@ -412,7 +419,7 @@ header .hamburger {
   header .sidebar{
   	
 	flex:2;
-	justify-content: space-between;
+	;
   }
 
 
@@ -425,10 +432,10 @@ header .hamburger {
   }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 590px) {
 
 .main .sidebar {
-	background-color: red;
+	
 	width: 60%;
 }
 header .sidebar h4 {
@@ -464,3 +471,4 @@ header .sidebar h4 {
 
 
 }
+

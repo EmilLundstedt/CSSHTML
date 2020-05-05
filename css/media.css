@@ -1,0 +1,19 @@
+@media screen and (max-width: 850px) {
+
+
+.main-header .nav-links{
+	display: none;
+}
+
+header .hamburger {
+	display: inline;
+	
+}
+
+
+.text-content h1{
+	display: none;
+}
+
+
+}

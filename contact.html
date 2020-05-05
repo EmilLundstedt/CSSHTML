@@ -24,9 +24,9 @@
 
                 <nav class="container">
                     <ul class="nav-links">
-                        <li><a class="current-nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="index.html">Home</a></li>
                         <li><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li><a class="current-nav-link" href="contact.html">Contact</a></li>
 
                     </ul>
                 </nav>
@@ -44,21 +44,57 @@
              <header>
                 <nav class="container">
                     <ul class="nav-links">
-                        <li><a class="current-nav-link" href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="index.html">Home</a></li>
                         <li><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li><a class="current-nav-link" href="contact.html">Contact</a></li>
 
                     </ul>
                 </nav>
             </header>
             
             <div class="text-content">
-                <h4> <span id="word">Nepal </h4></span>
-                <h1>Beautiful nature and exciting culture</h1>
-                <p > Explore and enjoy! </p>
-                <div class="container">
-                    <button class="button"> Join us </button>
+            
+
+
+                <section class="contact_form">
+        
+                <form>  
+                    <div class="name_section">
+                    <label>Your Name: </label>
+                    <input type="text"  autocomplete="off" id="fname" name="fname" placeholder="First Name">
+                    <input type="text" autocomplete="off" id="lname" name="lname" placeholder="Last Name">
                 </div>
+
+                <div class="email_section">
+                <label>Your Email: </label>
+                <input type="text"autocomplete="off" id="fname" name="fname"  placeholder="e.g.hello@gmail.com">
+                </div>
+
+                <div class="message_section">
+
+                
+                <label>Your Message: </label>
+                <select id="subject" name="subject" value="General">
+                <option value="General">General</option>
+                <option value="Refunds">Refunds</option>
+                <option value="Complaints">Complaints</option>
+
+                <textarea type="text" placeholder="Write your concerns..." autocomplete="off" id="messagebox" name="messagebox">  </textarea>
+                </div>
+                <div class="submit-section">
+                <input type="submit" value="Submit">
+                </div>
+        
+            </form> 
+
+    </section>
+
+
+
+
+
+
+
 
             </div>
 

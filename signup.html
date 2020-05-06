@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/media.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"> </script>
-    <title> Contact Us | Ucello</title>
+    <title> Sign Up | Ucello</title>
     <link rel="icon" href="img/favicon-32x32.png">
 
 </head>
@@ -18,15 +18,17 @@
         <div class="content-wrap">
 
             <header class="main-header">
+
                 <div class="container">
                     <h4>Ucello Airline</h4>
                 </div>
 
                 <nav class="container">
                     <ul class="nav-links">
-                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="current-nav-link" href="index.html">Home</a></li>
                         <li><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li><a class="current-nav-link" href="contact.html">Contact</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+
                     </ul>
                 </nav>
 
@@ -36,54 +38,59 @@
                     <div class="burger_row"></div>
                 </div>
 
+
             </header>
             
             <section class="main-section">
                <header>
                 <nav class="container">
                     <ul class="nav-links">
-                        <li><a class="nav-link" href="index.html">Home</a></li>
+                        <li><a class="current-nav-link" href="index.html">Home</a></li>
                         <li><a class="nav-link" href="gallery.html">Gallery</a></li>
-                        <li><a class="current-nav-link" href="contact.html">Contact</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
 
                     </ul>
                 </nav>
             </header>
             
             <div class="text-content">
-                
+
+
+
                 <section class="contact_form">
-                    
+
                     <form action="index.html">  
                         <div class="name_section">
                             <label>Your Name: </label>
                             <input type="text"  autocomplete="off" id="fname" name="fname" placeholder="First Name">
                             <input type="text" autocomplete="off" id="lname" name="lname" placeholder="Last Name">
+                             <label>Your Email: </label>
+                            <input type="text"autocomplete="off" name="email"  placeholder="Email">
+                            <input type="text"autocomplete="off" name="email"  placeholder="Repeat Email">
                         </div>
 
-                        <div class="email_section">
-                            <label>Your Email: </label>
-                            <input type="text"autocomplete="off" id="fname" name="fname"  placeholder="e.g.hello@gmail.com">
+
+                         <div class="name_section">
+                            <label>Password: </label>
+                            <input type="password"  autocomplete="off" name="password" placeholder="Password">
+                            <input type="password" autocomplete="off" name="password" placeholder="Repeat Password">
                         </div>
 
-                        <div class="message_section">
-
-                            
-                            <label>Your Message: </label>
-                            <select id="subject" name="subject" value="General">
-                                <option value="General">General</option>
-                                <option value="Refunds">Refunds</option>
-                                <option value="Complaints">Complaints</option>
-
-                                <textarea type="text" placeholder="Write your concerns..." autocomplete="off" id="messagebox" name="messagebox">  </textarea>
-                            </div>
                             <div class="submit-section">
-                                <input type="submit" value="Submit" class="subbutton">
+                                <input type="submit" value="Submit">
+                                <input type="submit" value="Back">
                             </div>
-                            
+
                         </form> 
 
                     </section>
+
+
+
+
+
+
+
 
                 </div>
 
